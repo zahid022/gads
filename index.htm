@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Ads</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- navbar start  -->
+    <nav>
+        <button onclick="sideBtn(true)" class="nav-icon">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <a href="index.htm" id="nav-logo">
+            <svg viewBox="0 0 74 24" aria-hidden="true" role="presentation" class="glue-icon glue-header__logo-svg">
+                <path fill="#4285F4" d="M9.24 8.19v2.46h5.88c-.18 1.38-.64 2.39-1.34 3.1-.86.86-2.2 1.8-4.54 1.8-3.62 0-6.45-2.92-6.45-6.54s2.83-6.54 6.45-6.54c1.95 0 3.38.77 4.43 1.76L15.4 2.5C13.94 1.08 11.98 0 9.24 0 4.28 0 .11 4.04.11 9s4.17 9 9.13 9c2.68 0 4.7-.88 6.28-2.52 1.62-1.62 2.13-3.91 2.13-5.75 0-.57-.04-1.1-.13-1.54H9.24z"></path>
+                <path fill="#EA4335" d="M25 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z"></path>
+                <path fill="#4285F4" d="M53.58 7.49h-.09c-.57-.68-1.67-1.3-3.06-1.3C47.53 6.19 45 8.72 45 12c0 3.26 2.53 5.81 5.43 5.81 1.39 0 2.49-.62 3.06-1.32h.09v.81c0 2.22-1.19 3.41-3.1 3.41-1.56 0-2.53-1.12-2.93-2.07l-2.22.92c.64 1.54 2.33 3.43 5.15 3.43 2.99 0 5.52-1.76 5.52-6.05V6.49h-2.42v1zm-2.93 8.03c-1.76 0-3.1-1.5-3.1-3.52 0-2.05 1.34-3.52 3.1-3.52 1.74 0 3.1 1.5 3.1 3.54.01 2.03-1.36 3.5-3.1 3.5z"></path>
+                <path fill="#FBBC05" d="M38 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z"></path>
+                <path fill="#34A853" d="M58 .24h2.51v17.57H58z"></path>
+                <path fill="#EA4335" d="M68.26 15.52c-1.3 0-2.22-.59-2.82-1.76l7.77-3.21-.26-.66c-.48-1.3-1.96-3.7-4.97-3.7-2.99 0-5.48 2.35-5.48 5.81 0 3.26 2.46 5.81 5.76 5.81 2.66 0 4.2-1.63 4.84-2.57l-1.98-1.32c-.66.96-1.56 1.6-2.86 1.6zm-.18-7.15c1.03 0 1.91.53 2.2 1.28l-5.25 2.17c0-2.44 1.73-3.45 3.05-3.45z"></path>
+            </svg>
+            <span>Ads</span>
+        </a>
+        <ul id="nav-menu">
+            <li><a href="#">Overview</a>
+                <div class="dropdown">
+                    <div class="drop-main">
+                        <h4>Overview</h4>
+                        <ul>
+                            <li><a href="#">Goals</a></li>
+                            <li><a href="#">How it works</a></li>
+                            <li><a href="#">Cost</a></li>
+                            <li><a href="#">Al-Powered Ad Solutions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">Solutions</a>
+                <div class="dropdown">
+                    <div class="drop-main">
+                        <h4>Solutions</h4>
+                        <div class="drop-cnt">
+                            <ul>
+                                <li><a href="#">Search</a></li>
+                                <li><a href="#">Performance Max</a></li>
+                                <li><a href="#">App</a></li>
+                                <li><a href="#">Shopping</a></li>
+                                <li><a href="#">Video</a></li>
+                                <li><a href="#">Smart</a></li>
+                                <li><a href="#">Demand Gen</a></li>
+                                <li><a href="#">Display</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Keyword Planner</a></li>
+                                <li><a href="#">Manager Accounts</a></li>
+                                <li><a href="#">Google Ads Editor</a></li>
+                                <li><a href="#">Reach Planner</a></li>
+                                <li><a href="#">Google Ads Mobile App</a></li>
+                                <li><a href="#">Conversion Tracking</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">Partners</a>
+                <div class="dropdown">
+                    <div class="drop-main">
+                        <h4>Partners</h4>
+                        <ul>
+                            <li><a href="#">Work with a partner</a></li>
+                            <li><a href="#">Become a partner</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">Resources</a>
+                <div class="dropdown">
+                    <div class="drop-main">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Growth Formula</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <a href="#" id="nav-account">
+            <ul>
+                <li>
+                    <button>Sign in</button>
+                </li>
+                <li>
+                    <button>Start now</button>
+                </li>
+                <li><img src="img/photo.jpg=w40-rw-v1" alt="Account Image" /></li>
+            </ul>
+        </a>
+    </nav>
+    <!-- navbar end  -->
+    <!-- sidebar start  --> 
+    <div id="sidebar">
+        <div class="sidebar-head">
+            <button onclick="sideBtn(false)" class="sidebar-icon">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <a href="index.htm" class="sidebar-logo">
+                <svg viewBox="0 0 74 24" aria-hidden="true" role="presentation" class="glue-icon glue-header__logo-svg">
+                    <path fill="#4285F4" d="M9.24 8.19v2.46h5.88c-.18 1.38-.64 2.39-1.34 3.1-.86.86-2.2 1.8-4.54 1.8-3.62 0-6.45-2.92-6.45-6.54s2.83-6.54 6.45-6.54c1.95 0 3.38.77 4.43 1.76L15.4 2.5C13.94 1.08 11.98 0 9.24 0 4.28 0 .11 4.04.11 9s4.17 9 9.13 9c2.68 0 4.7-.88 6.28-2.52 1.62-1.62 2.13-3.91 2.13-5.75 0-.57-.04-1.1-.13-1.54H9.24z"></path>
+                    <path fill="#EA4335" d="M25 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z"></path>
+                    <path fill="#4285F4" d="M53.58 7.49h-.09c-.57-.68-1.67-1.3-3.06-1.3C47.53 6.19 45 8.72 45 12c0 3.26 2.53 5.81 5.43 5.81 1.39 0 2.49-.62 3.06-1.32h.09v.81c0 2.22-1.19 3.41-3.1 3.41-1.56 0-2.53-1.12-2.93-2.07l-2.22.92c.64 1.54 2.33 3.43 5.15 3.43 2.99 0 5.52-1.76 5.52-6.05V6.49h-2.42v1zm-2.93 8.03c-1.76 0-3.1-1.5-3.1-3.52 0-2.05 1.34-3.52 3.1-3.52 1.74 0 3.1 1.5 3.1 3.54.01 2.03-1.36 3.5-3.1 3.5z"></path>
+                    <path fill="#FBBC05" d="M38 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z"></path>
+                    <path fill="#34A853" d="M58 .24h2.51v17.57H58z"></path>
+                    <path fill="#EA4335" d="M68.26 15.52c-1.3 0-2.22-.59-2.82-1.76l7.77-3.21-.26-.66c-.48-1.3-1.96-3.7-4.97-3.7-2.99 0-5.48 2.35-5.48 5.81 0 3.26 2.46 5.81 5.76 5.81 2.66 0 4.2-1.63 4.84-2.57l-1.98-1.32c-.66.96-1.56 1.6-2.86 1.6zm-.18-7.15c1.03 0 1.91.53 2.2 1.28l-5.25 2.17c0-2.44 1.73-3.45 3.05-3.45z"></path>
+                </svg>
+                <span>Ads</span>
+            </a>
+        </div>
+        <div class="sidebar-body">
+            <ul>
+                <li><button onclick="dropBtn(1)">Overview <span><i class="fa-solid fa-chevron-right"></i></span></button></li>
+                <li><button onclick="dropBtn(2)">Solutions <span><i class="fa-solid fa-chevron-right"></i></span></button></li>
+                <li><button onclick="dropBtn(3)">Partners <span><i class="fa-solid fa-chevron-right"></i></span></button></li>
+                <li><button onclick="dropBtn(4)">Resources <span><i class="fa-solid fa-chevron-right"></i></span></button></li>
+            </ul>
+        </div>
+        <div class="sidebar-content">
+            <div class="overview">
+                <button onclick="dropBtn(0)"><span class="fa-solid fa-chevron-left"></span> Overview</button>
+                <div class="drop-content">
+                    <h3>Overview</h3>
+                    <ul>
+                        <li><a href="#">Goals</a></li>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Cost</a></li>
+                        <li><a href="#">Al-Powered Ad Solutions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="solutions">
+                <button onclick="dropBtn(0)"><span class="fa-solid fa-chevron-left"></span> Solutions</button>
+                <div class="drop-content">
+                    <h3>Solutions</h3>
+                    <ul>
+                        <li><a href="#">Search</a></li>
+                        <li><a href="#">Performance Max</a></li>
+                        <li><a href="#">App</a></li>
+                        <li><a href="#">Shopping</a></li>
+                        <li><a href="#">Video</a></li>
+                        <li><a href="#">Smart</a></li>
+                        <li><a href="#">Demand Gen</a></li>
+                        <li><a href="#">Display</a></li>
+                        <li><a href="#">Keyword Planner</a></li>
+                        <li><a href="#">Manager Accounts</a></li>
+                        <li><a href="#">Google Ads Editor</a></li>
+                        <li><a href="#">Reach Planner</a></li>
+                        <li><a href="#">Google Ads Mobile App</a></li>
+                        <li><a href="#">Conversion Tracking</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="partners">
+                <button onclick="dropBtn(0)"><span class="fa-solid fa-chevron-left"></span> Partners</button>
+                <div class="drop-content">
+                    <h3>Partners</h3>
+                    <ul>
+                        <li><a href="#">Work with a partner</a></li>
+                        <li><a href="#">Become a partner</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resources">
+                <button onclick="dropBtn(0)"><span class="fa-solid fa-chevron-left"></span> Resources</button>
+                <div class="drop-content">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Growth Formula</a></li>
+                        <li><a href="#">Privacyr</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-footer">
+            <ul>
+                <li><button>Start now</button></li>
+                <li><button>Sign in</button></li>
+            </ul>
+        </div>
+    </div>
+    <!-- sidebar end  -->
+    <!-- header start  -->
+    <header>
+        <h1>with Google Ads</h1>
+        <ul id="hero-list">
+            <li class="animate__fadeInDown animate__animated">
+                Drive sales
+            </li>
+            <li class="animate__fadeInDown animate__animated">
+                <img width="180px" src="img/1.webp" alt="image" />
+            </li>
+        </ul>
+        <span id="hero-circle"></span>
+        <button onclick="animateBtn()" id="hero-btn"><i class="fas fa-pause"></i></button>
+        <p>For whatever matters most, make it easier for potential customers to find your business with Google Ads.</p>
+        <div id="start-btn">Start now</div>
+    </header>
+    <!-- header end  -->
+    <!-- main start  -->
+    <main>
+        <div id="section1-mob">
+            <section>
+                <h2>Google Ads gives you many ways to be seen</h2>
+                <div id="sec1-slider-mob">
+                    <div class="swiper2 mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide3">
+                                <button onclick="slide3Ac(0)">
+                                    <svg fill="#5f6368" width="24px" viewBox="0 0 24 24" aria-hidden="true" role="presentation" class="glue-icon facet-icon">
+                                        <path d="M20.49 19l-5.73-5.73C15.53 12.2 16 10.91 16 9.5A6.5 6.5 0 1 0 9.5 16c1.41 0 2.7-.47 3.77-1.24L19 20.49 20.49 19zM5 9.5C5 7.01 7.01 5 9.5 5S14 7.01 14 9.5 11.99 14 9.5 14 5 11.99 5 9.5z"></path>
+                                    </svg>
+                                    Search
+                                </button>
+                            </div>
+                            <div class="swiper-slide slide3">
+                                <button onclick="slide3Ac(1)">
+                                    <svg fill="#5f6368" width="24px" viewBox="0 0 24 24" aria-hidden="true" role="presentation" class="glue-icon facet-icon">
+                                        <path d="M19.5 3h-14c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2Zm0 16h-14V5h14v14Zm-8-3.28 3-3.72 4 5h-12l3-4 2 2.72Z"></path>
+                                    </svg>
+                                    Display
+                                </button>
+                            </div>
+                            <div class="swiper-slide slide3">
+                                <button onclick="slide3Ac(2)">
+                                    <svg width="24px" fill="#5f6368" viewBox="0 0 24 24" aria-hidden="true" role="presentation" class="glue-icon facet-icon">
+                                        <path d="M18.997 2h-5.87c-.8 0-1.56.32-2.12.88l-8.13 8.13a3 3 0 0 0 0 4.24l5.87 5.87c.59.59 1.36.88 2.12.88s1.54-.29 2.12-.88l8.13-8.12c.56-.56.88-1.33.88-2.12V5c0-1.66-1.34-3-3-3Zm1 8.88c0 .27-.1.52-.29.71l-8.13 8.12a.96.96 0 0 1-.71.29c-.16 0-.45-.04-.71-.29l-5.87-5.87a1.017 1.017 0 0 1 0-1.42l8.13-8.13c.19-.19.45-.29.71-.29h5.87c.55 0 1 .45 1 1v5.88Z"></path>
+                                        <path d="M16.497 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                                    </svg>
+                                    Shopping
+                                </button>
+                            </div>
+                            <div class="swiper-slide slide3">
+                                <button onclick="slide3Ac(3)">
+                                    <svg width="24px" fill="#5f6368" viewBox="0 0 24 24" aria-hidden="true" role="presentation" class="glue-icon facet-icon">
+                                        <path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3z"></path>
+                                    </svg>
+                                    Video
+                                </button>
+                            </div>
+                            <div class="swiper-slide slide3">
+                                <button onclick="slide3Ac(4)">
+                                    <svg width="24px" fill="#5f6368" viewBox="-4 -4 24 24" aria-hidden="true" role="presentation" class="glue-icon facet-icon">
+                                        <path d="M2 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2Zm6 12c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2Zm-4-2c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2Zm-2-4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2Zm8-2c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2Zm2-6c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2Zm-2 0c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2Zm4 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2Zm2 4c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2Z"></path>
+                                    </svg>
+                                    App
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <ul id="sec1-mob-content">
+                        <li class="content-mob-li">
+                            <div class="content-mob-img">
+                                <img src="img/20.webp" />
+                            </div>
+                            <h3>Start with search</h3>
+                            <p>Help drive sales, leads, or site traffic by getting your business in front of people who are actively searching Google for products or services you offer.</p>
+                            <button>
+                                <span><i class="fa-solid fa-arrow-right"></i></span>
+                                Explore Search Ads
+                            </button>
+                        </li>
+                        <li class="content-mob-li">
+                            <div class="content-mob-img">
+                                <img src="img/19.webp" />
+                            </div>
+                            <h3>Engage the eye</h3>
+                            <p>Build awareness and consideration with memorable, visually engaging ads that reach your audience when they’re online, checking Gmail, or using mobile apps.</p>
+                            <button>
+                                <span><i class="fa-solid fa-arrow-right"></i></span>
+                                Explore Display Ads
+                            </button>
+                        </li>
+                        <li class="content-mob-li">
+                            <div class="content-mob-img">
+                                <img src="img/21.webp" />
+                            </div>
+                            <h3>Offer up your inventory</h3>
+                            <p>Show up when people are shopping with visually engaging product listings and let them know what you have in stock to drive more sales.</p>
+                            <button>
+                                <span><i class="fa-solid fa-arrow-right"></i></span>
+                                Explore Shopping Ads
+                            </button>
+                        </li>
+                        <li class="content-mob-li">
+                            <div class="content-mob-img">
+                                <img src="img/22.webp" />
+                            </div>
+                            <h3>Bring your brand to life with video</h3>
+                            <p>Boost awareness of your brand, follow up with former ad viewers, and reach potential customers while they’re watching or searching for videos on YouTube.</p>
+                            <button>
+                                <span><i class="fa-solid fa-arrow-right"></i></span>
+                                Explore Video Ads
+                            </button>
+                        </li>
+                        <li class="content-mob-li">
+                            <div class="content-mob-img">
+                                <img src="img/23.webp" />
+                            </div>
+                            <h3>Promote your app</h3>
+                            <p>Reach people who are interested in apps like yours to drive installs or choose to re-engage current users to drive more in-app actions.</p>
+                            <button>
+                                <span><i class="fa-solid fa-arrow-right"></i></span>
+                                Explore App Ads
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div id="section1-des">
+            <section>
+                <h2>Google Ads gives you many ways to be seen</h2>
+                <div id="des-flex">
+                    <ul class="des-btn">
+                        <li>
+                            <button onclick="slide3desAc(0)">
+                                <svg fill="#5f6368" width="24px" viewBox="0 0 24 24" aria-hidden="true" role="presentation" class="glue-icon facet-icon">
+                                    <path d="M20.49 19l-5.73-5.73C15.53 12.2 16 10.91 16 9.5A6.5 6.5 0 1 0 9.5 16c1.41 0 2.7-.47 3.77-1.24L19 20.49 20.49 19zM5 9.5C5 7.01 7.01 5 9.5 5S14 7.01 14 9.5 11.99 14 9.5 14 5 11.99 5 9.5z"></path>
+                                </svg>
+                                Search
+                            </button>
+                        </li>
+                        <li>
+                            <button onclick="slide3desAc(1)">
+                                <svg fill="#5f6368" width="24px" viewBox="0 0 24 24" aria-hidden="true" role="presentation" class="glue-icon facet-icon">
+                                    <path d="M19.5 3h-14c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2Zm0 16h-14V5h14v14Zm-8-3.28 3-3.72 4 5h-12l3-4 2 2.72Z"></path>
+                                </svg>
+                                Display
+                            </button>
+                        </li>
+                        <li>
+                            <button onclick="slide3desAc(2)">
+                                <svg width="24px" fill="#5f6368" viewBox="0 0 24 24" aria-hidden="true" role="presentation" class="glue-icon facet-icon">
+                                    <path d="M18.997 2h-5.87c-.8 0-1.56.32-2.12.88l-8.13 8.13a3 3 0 0 0 0 4.24l5.87 5.87c.59.59 1.36.88 2.12.88s1.54-.29 2.12-.88l8.13-8.12c.56-.56.88-1.33.88-2.12V5c0-1.66-1.34-3-3-3Zm1 8.88c0 .27-.1.52-.29.71l-8.13 8.12a.96.96 0 0 1-.71.29c-.16 0-.45-.04-.71-.29l-5.87-5.87a1.017 1.017 0 0 1 0-1.42l8.13-8.13c.19-.19.45-.29.71-.29h5.87c.55 0 1 .45 1 1v5.88Z"></path>
+                                    <path d="M16.497 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                                </svg>
+                                Shopping
+                            </button>
+                        </li>
+                        <li>
+                            <button onclick="slide3desAc(3)">
+                                <svg width="24px" fill="#5f6368" viewBox="0 0 24 24" aria-hidden="true" role="presentation" class="glue-icon facet-icon">
+                                    <path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3z"></path>
+                                </svg>
+                                Video
+                            </button>
+                        </li>
+                        <li>
+                            <button onclick="slide3desAc(4)">
+                                <svg width="24px" fill="#5f6368" viewBox="-4 -4 24 24" aria-hidden="true" role="presentation" class="glue-icon facet-icon">
+                                    <path d="M2 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2Zm6 12c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2Zm-4-2c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2Zm-2-4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2Zm8-2c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2Zm2-6c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2Zm-2 0c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2Zm4 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2Zm2 4c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2Z"></path>
+                                </svg>
+                                App
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="des-img">
+                        <li>
+                            <img src="img/24.webp" />
+                        </li>
+                        <li>
+                            <img src="img/25.webp" />
+                        </li>
+                        <li>
+                            <img src="img/26.webp" />
+                        </li>
+                        <li>
+                            <img src="img/27.webp" />
+                        </li>
+                        <li>
+                            <img src="img/28.webp" />
+                        </li>
+                    </ul>
+                    <ul class="des-content">
+                        <li>
+                            <h3>Offer up your inventory</h3>
+                            <p>Show up when people are shopping with visually engaging product listings and let them know what you have in stock to drive more sales.</p>
+                            <button>
+                                <span><i class="fa-solid fa-arrow-right"></i></span>
+                                Explore Search Ads
+                            </button>
+                        </li>
+                        <li>
+                            <h3>Engage the eye</h3>
+                            <p>Build awareness and consideration with memorable, visually engaging ads that reach your audience when they’re online, checking Gmail, or using mobile apps.</p>
+                            <button>
+                                <span><i class="fa-solid fa-arrow-right"></i></span>
+                                Explore Display Ads
+                            </button>
+                        </li>
+                        <li>
+                            <h3>Offer up your inventory</h3>
+                            <p>Show up when people are shopping with visually engaging product listings and let them know what you have in stock to drive more sales.</p>
+                            <button>
+                                <span><i class="fa-solid fa-arrow-right"></i></span>
+                                Explore Shopping Ads
+                            </button>
+                        </li>
+                        <li>
+                            <h3>Bring your brand to life with video</h3>
+                            <p>Boost awareness of your brand, follow up with former ad viewers, and reach potential customers while they’re watching or searching for videos on YouTube.</p>
+                            <button>
+                                <span><i class="fa-solid fa-arrow-right"></i></span>
+                                Explore Video Ads
+                            </button>
+                        </li>
+                        <li>
+                            <h3>Promote your app</h3>
+                            <p>Reach people who are interested in apps like yours to drive installs or choose to re-engage current users to drive more in-app actions.</p>
+                            <button>
+                                <span><i class="fa-solid fa-arrow-right"></i></span>
+                                Explore App Ads
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div id="section2">
+            <section>
+                <h2>Achieve all your goals in one place</h2>
+                <button>Learn more</button>
+                <div id="goals">
+                    <ul>
+                        <li>
+                            <div class="sec2-img">
+                                <img width="70px" src="img/5.webp" />
+                            </div>
+                            <div class="sec2-text">
+                                <h4>Maximize leads and conversions</h4>
+                                <p>Get better quality leads and enhance conversions.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sec2-img">
+                                <img width="70px" src="img/6.webp" />
+                            </div>
+                            <div class="sec2-text">
+                                <h4>Increase online sales</h4>
+                                <p>Show up where shoppers are and increase site traffic and sales.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sec2-img">
+                                <img width="70px" src="img/7.webp" />
+                            </div>
+                            <div class="sec2-text">
+                                <h4>Drive in-store foot traffic</h4>
+                                <p>Bring people through your doors and increase offline sales.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sec2-img">
+                                <img width="70px" src="img/8.webp" />
+                            </div>
+                            <div class="sec2-text">
+                                <h4>Show your brand to more people</h4>
+                                <p>Put your brand out there to increase reach and engagement.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sec2-img">
+                                <img width="70px" src="img/9.webp" />
+                            </div>
+                            <div class="sec2-text">
+                                <h4>Market your app to new users</h4>
+                                <p>Put your app in front of the right users to drive downloads and engagement.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <h3>The power of Google, <br> <span>for your business</span></h3>
+                <div id="slider-mob1">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1">
+                                <ul>
+                                    <li>
+                                        <div class="slide1-img">
+                                            <img width="100%" src="img/10.webp" />
+                                        </div>
+                                        <div class="slide1-text">
+                                            <h5>Reach customers wherever they are</h5>
+                                            <p>Show up at the right time and place across the vast Google Ads ecosystem. Let Google’s AI find your best performing ad formats across Youtube, Discover, Search, and more to maximize conversions.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide slide1">
+                                <ul>
+                                    <li>
+                                        <div class="slide1-img">
+                                            <img width="100%" src="img/11.webp" />
+                                        </div>
+                                        <div class="slide1-text">
+                                            <h5>Track, learn, and optimize for ROI</h5>
+                                            <p>Track conversions to get unmatched audience insights. Google’s budget-optimizing automation helps you capture new customer opportunities with the highest ROI.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide slide1">
+                                <ul>
+                                    <li>
+                                        <div class="slide1-img">
+                                            <img width="100%" src="img/12.webp" />
+                                        </div>
+                                        <div class="slide1-text">
+                                            <h5>Stay in full control of your budget</h5>
+                                            <p>Get recommendations, decide your monthly budget, and adjust at any time. Google technology helps you measure results and make the most of your ad spend.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="business">
+                    <ul>
+                        <li>
+                            <div class="business-img">
+                                <img width="290" src="img/10.webp" />
+                            </div>
+                            <div class="business-text align-self-center">
+                                <h5>Reach customers wherever they are</h5>
+                                <p>Show up at the right time and place across the vast Google Ads ecosystem. Let Google’s AI find your best performing ad formats across Youtube, Discover, Search, and more to maximize conversions.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="business-img">
+                                <img width="290" src="img/11.webp" />
+                            </div>
+                            <div class="business-text align-self-center">
+                                <h5>Track, learn, and optimize for ROI</h5>
+                                <p>Track conversions to get unmatched audience insights. Google’s budget-optimizing automation helps you capture new customer opportunities with the highest ROI.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="business-img">
+                                <img width="290" src="img/12.webp" />
+                            </div>
+                            <div class="business-text align-self-center">
+                                <h5>Stay in full control of your budget</h5>
+                                <p>Get recommendations, decide your monthly budget, and adjust at any time. Google technology helps you measure results and make the most of your ad spend.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div id="section3">
+            <section>
+                <h2>What success looks like</h2>
+                <button>View all success stories</button>
+            </section>
+            <div id="slider2">
+                <div class="swiper mySwiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide2">
+                            <div class="slide2-img">
+                                <img width="100%" src="img/13.webp" />
+                            </div>
+                            <div class="slide2-text">
+                                <img src="img/14.webp" />
+                                <h5>280% <span>ROI since 2019</span></h5>
+                                <h3>“There really is no better platform than
+                                    Google Ads to reach the entire world.”</h3>
+                                <p>Josh Kilmer-Purcell, Co-owner, Beekman 1802</p>
+                                <button>
+                                    <span><i class="fab fa-youtube"></i></span>
+                                    <a href="#">Watch their story</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <div class="slide2-img">
+                                <img width="100%" src="img/15.webp" />
+                            </div>
+                            <div class="slide2-text">
+                                <img src="img/16.webp" />
+                                <h5 style="color: #185abc !important;">150% <span>YoY growth</span></h5>
+                                <h3>“This year already, we have a 300% ROI 
+                                    in our Google Ads.”</h3>
+                                <p>Randy Williams, Founder & CEO, Talley & Twine
+                                  </p>
+                                <button>
+                                    <span><i class="fab fa-youtube"></i></span>
+                                    <a href="#">Watch their story</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <div class="slide2-img">
+                                <img width="100%" src="img/17.webp" />
+                            </div>
+                            <div class="slide2-text">
+                                <img src="img/18.webp" />
+                                <h5>190% <span>YoY growth</span></h5>
+                                <h3>“After using Google Ads, we saw a 190%
+                                    increase in sales YoY.”</h3>
+                                <p>Maggie O’Rear, Marketing Manager,
+                                    Mother-in-Law’s Kimchi</p>
+                                <button>
+                                    <span><i class="fab fa-youtube"></i></span>
+                                    <a href="#">Watch their story</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination pag"></div>
+            </div>
+        </div>
+    </main>
+    <!-- main end  -->
+    <!-- footer start  -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <h4>Follow us</h4>
+                <ul id="social-link">
+                    <li>
+                        <a href="#">
+                            <svg width="24px" viewBox="0 0 24 24" aria-hidden="true" role="presentation" class="glue-icon glue-icon--24px">
+                                <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 20c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-4 7v1c0 .55.45 1 1 1s1 .45 1 1v3c0 1.66-1.34 3-3 3H9c-1.66 0-3-1.34-3-3V8c0-1.66 1.34-3 3-3h4c1.66 0 3 1.34 3 3v1zm-6.05 1h2.6c.55 0 1-.45 1-1s-.45-1-1-1h-2.6c-.55 0-1 .45-1 1s.45 1 1 1zM14 13H9.95c-.55 0-1 .45-1 1s.45 1 1 1H14c.55 0 1-.45 1-1s-.45-1-1-1z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="24px" viewBox="0 0 24 24" aria-hidden="true" role="presentation" class="glue-icon glue-icon--24px">
+                                <path d="M7.5,21.8c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6c1-0.7,1.8-1.6,2.5-2.5c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7 c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1 C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,4,4.8c-0.4,0.1-0.8,0.2-1.3,0.2 c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1C2.2,20.9,4.8,21.8,7.5,21.8"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="24px" viewBox="0 0 24 24" aria-hidden="true" role="presentation" class="glue-icon glue-icon--24px">
+                                <path d="M23.74 7.1s-.23-1.65-.95-2.37c-.91-.96-1.93-.96-2.4-1.02C17.04 3.47 12 3.5 12 3.5s-5.02-.03-8.37.21c-.46.06-1.48.06-2.39 1.02C.52 5.45.28 7.1.28 7.1S.04 9.05 0 10.98V13c.04 1.94.28 3.87.28 3.87s.24 1.65.96 2.38c.91.95 2.1.92 2.64 1.02 1.88.18 7.91.22 8.12.22 0 0 5.05.01 8.4-.23.46-.06 1.48-.06 2.39-1.02.72-.72.96-2.37.96-2.37s.24-1.94.25-3.87v-2.02c-.02-1.93-.26-3.88-.26-3.88zM9.57 15.5V8.49L16 12.13 9.57 15.5z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="24px" viewBox="0 0 24 24" aria-hidden="true" role="presentation" class="glue-icon glue-icon--24px">
+                                <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 20c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 2v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v7h-3v-7h-2v-3h2V7.5C13 5.57 14.57 4 16.5 4H19z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <ul id="accordion">
+                    <li>
+                        <button onclick="accordionBtn(0)">About Google Ads <i class="fas fa-chevron-down"></i></button>
+                        <ul class="accordion-item">
+                            <li><a href="#">Overview</a></li>
+                            <li><a href="#">Goals</a></li>
+                            <li><a href="#">Mobile app for Android</a></li>
+                            <li><a href="#">Mobile app for IOS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button onclick="accordionBtn(1)">Learning & support <i class="fas fa-chevron-down"></i></button>
+                        <ul class="accordion-item">
+                            <li><a href="#">Your guide to Google Ads</a></li>
+                            <li><a href="#">Google Ads Help Center</a></li>
+                            <li><a href="#">Google Ads Announcements</a></li>
+                            <li><a href="#">Google Advertiser Community</a></li>
+                            <li><a href="#">Grow My App</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button onclick="accordionBtn(2)">Developers & partners <i class="fas fa-chevron-down"></i></button>
+                        <ul class="accordion-item">
+                            <li><a href="#">Google Developers Site</a></li>
+                            <li><a href="#">Google Ads Scripts</a></li>
+                            <li><a href="#">Google Ads Remarketing Tags</a></li>
+                            <li><a href="#">Google Ads API</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button onclick="accordionBtn(3)">Related products & tools <i class="fas fa-chevron-down"></i></button>
+                        <ul class="accordion-item">
+                            <li><a href="#">Google Analytics</a></li>
+                            <li><a href="#">Business Profile</a></li>
+                            <li><a href="#">Chrome</a></li>
+                            <li><a href="#">Insights finder</a></li>
+                            <li><a href="#">Performance planner</a></li>
+                            <li><a href="#">Experiments</a></li>
+                            <li><a href="#">Recommendations</a></li>
+                            <li><a href="#">Insights</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button onclick="accordionBtn(4)">More solutions <i class="fas fa-chevron-down"></i></button>
+                        <ul class="accordion-item">
+                            <li><a href="#">Business Solutions</a></li>
+                            <li><a href="#">Google Workspace</a></li>
+                            <li><a href="#">Think with Google</a></li>
+                            <li><a href="#">AdSense</a></li>
+                            <li><a href="#">AdMob</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li>About Google Ads</li>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Goals</a></li>
+                    <li><a href="#">Mobile app for Android</a></li>
+                    <li><a href="#">Mobile app for IOS</a></li>
+                </ul>
+                <ul>
+                    <li>Learning & support</li>
+                    <li><a href="#">Your guide to Google Ads</a></li>
+                    <li><a href="#">Google Ads Help Center</a></li>
+                    <li><a href="#">Google Ads Announcements</a></li>
+                    <li><a href="#">Google Advertiser Community</a></li>
+                    <li><a href="#">Grow My App</a></li>
+                </ul>
+                <ul>
+                    <li>Developers & partners</li>
+                    <li><a href="#">Google Developers Site</a></li>
+                    <li><a href="#">Google Ads Scripts</a></li>
+                    <li><a href="#">Google Ads Remarketing Tags</a></li>
+                    <li><a href="#">Google Ads API</a></li>
+                </ul>
+                <ul>
+                    <li>Related products & tools</li>
+                    <li><a href="#">Google Analytics</a></li>
+                    <li><a href="#">Business Profile</a></li>
+                    <li><a href="#">Chrome</a></li>
+                    <li><a href="#">Insights finder</a></li>
+                    <li><a href="#">Performance planner</a></li>
+                    <li><a href="#">Experiments</a></li>
+                    <li><a href="#">Recommendations</a></li>
+                    <li><a href="#">Insights</a></li>
+                </ul>
+                <ul>
+                    <li>More solutions</li>
+                    <li><a href="#">Business Solutions</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <h4>Actual results will vary by advertiser.</h4>
+                <div class="ftr">
+                    <div class="footer-menu">
+                        <a href="#">
+                            <svg fill="#5f6368" id="google-solid-logo" viewBox="0 0 74 24" class="glue-icon google-logo" width="74">
+                                <path d="M9.24 8.19v2.46h5.88c-.18 1.38-.64 2.39-1.34 3.1-.86.86-2.2 1.8-4.54 1.8-3.62 0-6.45-2.92-6.45-6.54s2.83-6.54 6.45-6.54c1.95 0 3.38.77 4.43 1.76L15.4 2.5C13.94 1.08 11.98 0 9.24 0 4.28 0 .11 4.04.11 9s4.17 9 9.13 9c2.68 0 4.7-.88 6.28-2.52 1.62-1.62 2.13-3.91 2.13-5.75 0-.57-.04-1.1-.13-1.54H9.24zm15.76-2c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52zm28.58-8.03h-.09c-.57-.68-1.67-1.3-3.06-1.3C47.53 6.19 45 8.72 45 12c0 3.26 2.53 5.81 5.43 5.81 1.39 0 2.49-.62 3.06-1.32h.09v.81c0 2.22-1.19 3.41-3.1 3.41-1.56 0-2.53-1.12-2.93-2.07l-2.22.92c.64 1.54 2.33 3.43 5.15 3.43 2.99 0 5.52-1.76 5.52-6.05V6.49h-2.42v1zm-2.93 8.03c-1.76 0-3.1-1.5-3.1-3.52 0-2.05 1.34-3.52 3.1-3.52 1.74 0 3.1 1.5 3.1 3.54.01 2.03-1.36 3.5-3.1 3.5zM38 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52zM58 .24h2.51v17.57H58zm10.26 15.28c-1.3 0-2.22-.59-2.82-1.76l7.77-3.21-.26-.66c-.48-1.3-1.96-3.7-4.97-3.7-2.99 0-5.48 2.35-5.48 5.81 0 3.26 2.46 5.81 5.76 5.81 2.66 0 4.2-1.63 4.84-2.57l-1.98-1.32c-.66.96-1.56 1.6-2.86 1.6zm-.18-7.15c1.03 0 1.91.53 2.2 1.28l-5.25 2.17c0-2.44 1.73-3.45 3.05-3.45z"></path>
+                            </svg>
+                        </a>
+                        <ul>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">About Google</a></li>
+                            <li><a href="#">Google products</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-end">
+                        <button id="help">
+                           <span>
+                                <svg fill="#5f6368" width="24px" class="glue-icon glue-icon--24px" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path>
+                                </svg> 
+                           </span>
+                           <span>
+                                Help
+                           </span>
+                        </button>
+                        <select>
+                            <option value="En">English</option>
+                            <option value="Ru">Russian</option>
+                            <option value="Tr">Turkish</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="fixed-btn">
+            <button>Start now</button>
+        </div>
+    </footer>
+    <!-- footer end  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>  
+    <script src="js/script.js"></script>
+</body>
+</html>
