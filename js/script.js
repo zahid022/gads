@@ -149,8 +149,13 @@ function slide3Ac(v) {
     moBtn[v].style.background = 'black'
     moBtn[v].style.color = '#fff'
 }
+let a = 0
 function slide3desAc(v) {
-    for (let i = 0; i < contentMobLi.length; i++) {
+    a = v
+    asd(a)
+}
+function asd(v) {
+    for (let i = 0; i < desBtnLi.length; i++) {
         desBtnLi[i].style.background = '#fff'
         desBtnLi[i].style.color = 'black'
         desImgLi[i].style.display = 'none'
@@ -160,6 +165,33 @@ function slide3desAc(v) {
     desContentLi[v].style.display = 'block'
     desBtnLi[v].style.background = 'black'
     desBtnLi[v].style.color = '#fff'
-    desBtn[v].style.background = 'black'
-    desBtn[v].style.color = '#fff'
+
 }
+setInterval(() => {
+    if(a < 5) {
+        asd(a++)
+    }
+    else a = 0 , asd(a)
+}, 2000)
+let a1 = 0
+function slide3Ac(v) {
+    a1 = v
+    asd1(a)
+}
+function asd1(v) {
+    for (let i = 0; i < contentMobLi.length; i++) {
+        contentMobLi[i].style.display = 'none'
+        moBtn[i].style.background = '#fff'
+        moBtn[i].style.color = 'black'
+    }
+    contentMobLi[v].style.display = 'block'
+    moBtn[v].style.background = 'black'
+    moBtn[v].style.color = '#fff'
+
+}
+setInterval(() => {
+    if(a1 < 5) {
+        asd(a1++)
+    }
+    else a1 = 0 , asd(a1)
+}, 2000)
