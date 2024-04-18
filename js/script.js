@@ -3,6 +3,7 @@ const header = document.querySelector('header')
 const main = document.querySelector('main')
 const footer = document.querySelector('footer')
 const nav = document.querySelector('nav')
+
 const heroList = document.getElementById('hero-list')
 const heroCircle = document.getElementById('hero-circle')
 const fixedBtn = document.getElementById('fixed-btn')
