@@ -9,5 +9,9 @@
     font-family: 'Avenir Next';
     src: url('../font/avenir/AvenirNextRoundedStd-Reg.woff');
 }
+@font-face {
+    font-family: 'sans';
+    src: url('../font/google-sans/ProductSans-Regular.ttf');
+}
 
 
